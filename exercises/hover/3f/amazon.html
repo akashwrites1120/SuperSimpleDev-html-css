@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .amazon-link{
+            transition: color 0.15s;
+        }
+        .amazon-link:hover{
+            color: rgb(217, 138, 12);
+        }
         .h2-sentences{
             color: green;
+            transition: color 0.15s;
         }
+        
         .paragraph{
             font-size: 18px;
         }
@@ -20,6 +28,14 @@
             padding-left: 26px;
             border-radius: 20px;
             font-size: 16px;
+            transition: background-color 0.15s, cursor 0.15s, opacity 0.15s;
+        }
+        .cart-button:hover{
+            background-color: rgb(252, 212, 14);
+            cursor: pointer;
+        }
+        .cart-button:active{
+            opacity: 0.7;
         }
         .buy-button{
             background-color: rgb(252, 169, 15);
@@ -31,11 +47,19 @@
             border-radius: 20px;
             font-size: 16px;
             margin-left: 10px;
+            transition: background-color 0.15s, cursor 0.15s, opacity 0.15s;
+        }
+        .buy-button:hover{
+            background-color: rgb(252, 134, 15);
+            cursor: pointer;
+        }
+        .buy-button:active{
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
-    <a href="https://www.amazon.in/">Back to Amazon</a>
+    <a class="amazon-link" href="https://www.amazon.in/">Back to Amazon</a>
     <br>
     <h1>Nike Black Running Shoes</h1>
     <h2 class="h2-sentences">$39 - in stock.</h2>
